@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container">
         <div className={styles.grid}>
           <div>
-            <span className={styles.logo}>Nyota<span>Fund</span></span>
+            <span className={styles.logo}>Zuri<span>Credit</span></span>
             <p className={styles.tagline}>Kenya&apos;s trusted digital lender. Fast, transparent, and M-Pesa powered loans for every Kenyan.</p>
             <div className={styles.badges}>
               <span className={styles.badge}>M-Pesa Powered</span>
@@ -20,7 +20,7 @@ export default function Footer() {
             <Link href="/#loans">Karo Loan</Link>
             <Link href="/#loans">Biashara Loan</Link>
             <Link href="/#loans">Maisha Loan</Link>
-            <Link href="/#loans">Nyota Premium</Link>
+            <Link href="/#loans">Zuri Premium</Link>
           </div>
           <div className={styles.col}>
             <h5>Company</h5>
@@ -38,7 +38,7 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.bottom}>
-          <span>© 2025 NyotaFund Ltd. All rights reserved. Nairobi, Kenya.</span>
+          <span>© 2025 ZuriCredit Ltd. All rights reserved. Nairobi, Kenya.</span>
           <span>Licensed by the Central Bank of Kenya</span>
         </div>
       </div>

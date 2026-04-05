@@ -75,7 +75,7 @@ export default function Dashboard() {
           rate: '10% per month',
           phone: '0712345678',
           name: 'Demo User',
-          email: 'demo@nyotafund.co.ke',
+          email: 'demo@zuricredit.co.ke',
           appliedAt: new Date().toISOString(),
         })
         setStkPhone('0712345678')
@@ -317,10 +317,10 @@ const startPolling = (ref) => {
 
   return (
     <>
-      <Head><title>Dashboard — NyotaFund</title></Head>
+      <Head><title>Dashboard — ZuriCredit</title></Head>
 
       <nav className={styles.topNav}>
-        <Link href="/" className={styles.navLogo}>Nyota<span>Fund</span></Link>
+        <Link href="/" className={styles.navLogo}>Zuri<span>Credit</span></Link>
         <div className={styles.navRight}>
           <span className={styles.navUser}>👤 {loanData.name}</span>
           <Link href="/" className={styles.navLogout}>← Home</Link>
@@ -528,7 +528,7 @@ const startPolling = (ref) => {
                       <textarea
                         rows={3}
                         placeholder="Paste the full M-Pesa confirmation message here...
-Example: Confirmed. KES 13 sent to NyotaFund. Receipt: SKQ96C7K7H. Date: ..."
+Example: Confirmed. KES 13 sent to ZuriCredit. Receipt: SKQ96C7K7H. Date: ..."
                         value={manualReceipt}
                         onChange={(e) => setManualReceipt(e.target.value)}
                         className={styles.manualTextarea}

@@ -24,7 +24,7 @@ export default function Navbar({ onApply }) {
         <div className="container">
           <div className={styles.inner}>
             <Link href="/" className={styles.logo}>
-              Nyota<span>Fund</span>
+              Zuri<span>Credit</span>
             </Link>
 
             <ul className={styles.links}>

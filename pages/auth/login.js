@@ -29,7 +29,7 @@ export default function Login() {
       <div className={styles.inner}>
         <div className={styles.card}>
           <div className={styles.logoBox}>
-            <Link href="/" className={styles.logo}>Nyota<span>Fund</span></Link>
+            <Link href="/" className={styles.logo}>Zuri<span>Credit</span></Link>
           </div>
           <h2>Welcome Back</h2>
           <p className={styles.sub}>Log in to manage your loans and account</p>

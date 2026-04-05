@@ -85,7 +85,7 @@ export default function Home() {
           <div className="section-header">
             <span className="badge">Simple Process</span>
             <h2>Get Your Loan in 4 Steps</h2>
-            <p>We&apos;ve made borrowing as simple as sending an M-Pesa. Here&apos;s how NyotaFund works.</p>
+            <p>We&apos;ve made borrowing as simple as sending an M-Pesa. Here&apos;s how ZuriCredit works.</p>
           </div>
           <div className={styles.stepsGrid}>
             {[
@@ -121,8 +121,8 @@ export default function Home() {
             <div className={styles.teaserText}>
               <span style={{ fontSize: 22 }}>🌟</span>
               <div>
-                <strong>Explore more — Nyota Premium unlocked after registration</strong>
-                <p>Registered members get access to our exclusive Nyota Premium product with loans up to KES 500,000, lower rates, and longer repayment periods.</p>
+                <strong>Explore more — ZuriCredit Premium unlocked after registration</strong>
+                <p>Registered members get access to our exclusive ZuriCredit Premium product with loans up to KES 500,000, lower rates, and longer repayment periods.</p>
               </div>
             </div>
             <button className={styles.teaserBtn} onClick={() => setApplyOpen(true)}>
@@ -147,7 +147,7 @@ export default function Home() {
               { icon: '🔒', title: 'Data & Privacy', body: "Your data is encrypted with 256-bit SSL. We comply with Kenya's Data Protection Act 2019. We do not sell your personal information. CRB checks done with your explicit consent." },
               { icon: '⚖️', title: 'Defaulting & CRB', body: 'Loans overdue by 90+ days are reported to the Credit Reference Bureau. CRB listing affects your ability to borrow from any Kenyan lender. Contact us early if facing challenges.' },
               { icon: '📲', title: 'M-Pesa Disbursement', body: 'All loans are disbursed directly to your registered Safaricom M-Pesa line. Repayments are also made via M-Pesa Paybill. Ensure your line is active and registered.' },
-              { icon: '🌍', title: 'Regulation', body: 'NyotaFund operates under Central Bank of Kenya (CBK) guidelines for digital credit providers. Licensed under the Business Registration Act and member of Kenya Bankers Association.' },
+              { icon: '🌍', title: 'Regulation', body: 'ZuriCredit operates under Central Bank of Kenya (CBK) guidelines for digital credit providers. Licensed under the Business Registration Act and member of Kenya Bankers Association.' },
             ].map(t => (
               <div key={t.title} className={styles.termCard}>
                 <div className={styles.termIcon}>{t.icon}</div>

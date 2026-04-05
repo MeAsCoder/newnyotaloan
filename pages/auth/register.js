@@ -41,10 +41,10 @@ export default function Register() {
       <div className={styles.inner}>
         <div className={styles.card}>
           <div className={styles.logoBox}>
-            <Link href="/" className={styles.logo}>Nyota<span>Fund</span></Link>
+            <Link href="/" className={styles.logo}>Zuri<span>Credit</span></Link>
           </div>
           <h2>Create Account</h2>
-          <p className={styles.sub}>Start your NyotaFund journey today</p>
+          <p className={styles.sub}>Start your ZuriCredit journey today</p>
 
           {error && <div className={styles.errorBox}>{error}</div>}
 
