@@ -1,0 +1,122 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.card:hover {
+  box-shadow: 0 8px 32px rgba(27, 67, 50, 0.1);
+  transform: translateY(-3px);
+}
+.featured {
+  border: 2px solid var(--brand);
+}
+.gold {
+  background: linear-gradient(135deg, #FFFFF0, #FFFDE7);
+  border-color: #E6C84A;
+}
+.featuredBadge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--brand);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.05em;
+}
+.icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  font-size: 22px;
+}
+.name {
+  font-size: 20px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.range {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+.maxAmount {
+  font-family: 'Instrument Serif', serif;
+  font-size: 36px;
+  color: var(--brand);
+  margin-bottom: 4px;
+}
+.maxAmount span {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: 400;
+}
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin: 20px 0;
+}
+.detail {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.detail span {
+  color: var(--muted);
+}
+.detail strong {
+  font-weight: 600;
+  color: var(--text);
+}
+.feeNote {
+  background: #FFF9E6;
+  border: 1px solid #F0D080;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 12px;
+  color: #7A5F00;
+  margin-top: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.5;
+}
+.applyBtn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 13px;
+  border-radius: 50px;
+  background: var(--brand);
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.applyBtn:hover {
+  background: var(--brand-light);
+}
+.outline {
+  background: transparent;
+  border: 1.5px solid var(--brand);
+  color: var(--brand);
+}
+.outline:hover {
+  background: var(--brand);
+  color: #fff;
+}

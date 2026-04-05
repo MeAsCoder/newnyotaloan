@@ -1,0 +1,137 @@
+.overlay {
+  display: flex;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow-y: auto;
+}
+.modal {
+  background: #fff;
+  border-radius: 28px;
+  padding: 48px 40px;
+  max-width: 520px;
+  width: 100%;
+  position: relative;
+  animation: popIn 0.3s ease;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.title {
+  font-size: 26px;
+  color: var(--text);
+  margin-bottom: 8px;
+  text-align: center;
+}
+.sub {
+  color: var(--muted);
+  font-size: 15px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+.checkBtn {
+  width: 100%;
+  padding: 15px;
+  background: var(--brand);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 8px;
+}
+.checkBtn:hover {
+  background: var(--brand-light);
+}
+.backBtn {
+  width: 100%;
+  padding: 12px;
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: color 0.2s;
+}
+.backBtn:hover {
+  color: var(--brand);
+}
+.successRing {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #D1FAE5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+.loansList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.loanItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  background: var(--bg);
+  border-radius: 14px;
+  border: 1px solid var(--border);
+}
+.loanName {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+.loanLimit {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+.loanRight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.loanAmt {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--brand);
+}
+.checkBadge {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #D1FAE5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feeNote {
+  background: #FFF9E6;
+  border-radius: 12px;
+  padding: 14px 18px;
+  font-size: 13px;
+  color: #7A5F00;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.feeNote strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 600px) {
+  .modal {
+    padding: 32px 24px;
+  }
+}

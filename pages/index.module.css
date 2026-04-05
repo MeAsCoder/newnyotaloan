@@ -1,0 +1,443 @@
+/* ── HERO ── */
+.hero {
+  background: var(--brand);
+  color: #fff;
+  padding: 100px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -80px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: rgba(64, 145, 108, 0.18);
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  left: -50px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(116, 198, 157, 0.10);
+}
+.heroInner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.heroEyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.heroBadge {
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: var(--accent2) !important;
+}
+.mpesaPill {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent2);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.heroH1 {
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.12;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.heroH1 em {
+  color: var(--accent2);
+  font-style: italic;
+}
+.heroSub {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 36px;
+  max-width: 480px;
+}
+.heroBtns {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.heroCtaBtn {
+  background: var(--accent2) !important;
+  color: var(--brand) !important;
+  font-weight: 700 !important;
+}
+.heroCtaBtn:hover {
+  background: #95d5b2 !important;
+}
+.heroOutlineBtn {
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  color: #fff !important;
+}
+.heroOutlineBtn:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+}
+.heroStats {
+  display: flex;
+  gap: 32px;
+  margin-top: 48px;
+  flex-wrap: wrap;
+}
+.stat {}
+.statNum {
+  font-family: 'Instrument Serif', serif;
+  font-size: 32px;
+  color: #fff;
+}
+.statLbl {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 2px;
+}
+.heroCard {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  padding: 32px;
+}
+.heroCard h3 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: 'Instrument Serif', serif;
+}
+.loanRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.loanRow:last-of-type {
+  border-bottom: none;
+}
+.lrName {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+}
+.lrAmount {
+  font-size: 14px;
+  color: var(--accent2);
+  font-weight: 700;
+}
+.lrPeriod {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.trustChips {
+  display: flex;
+  gap: 6px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.chip {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ── HOW IT WORKS ── */
+.how {
+  background: var(--surface);
+  padding: 80px 0;
+}
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.stepCard {
+  text-align: center;
+  padding: 36px 20px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--bg);
+  transition: box-shadow 0.2s;
+}
+.stepCard:hover {
+  box-shadow: 0 4px 24px rgba(27, 67, 50, 0.08);
+}
+.stepNum {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--brand);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+.stepCard h4 {
+  font-size: 17px;
+  margin-bottom: 10px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+}
+.stepCard p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* ── LOANS ── */
+.loansSection {
+  background: var(--bg);
+  padding: 80px 0;
+}
+.loansGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 24px;
+}
+.moreLoansTeaser {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: var(--surface);
+  border: 1.5px dashed var(--border);
+  border-radius: 20px;
+  padding: 24px 28px;
+  flex-wrap: wrap;
+}
+.teaserText {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  flex: 1;
+}
+.teaserText strong {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.teaserText p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0;
+}
+.teaserBtn {
+  background: var(--brand);
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+.teaserBtn:hover {
+  background: var(--brand-light);
+}
+
+/* ── TERMS ── */
+.termsSection {
+  background: var(--surface);
+  padding: 80px 0;
+}
+.termsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.termCard {
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--bg);
+}
+.termIcon {
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+.termCard h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-family: 'Outfit', sans-serif;
+}
+.termCard p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* ── ELIGIBILITY SECTION ── */
+.eligSection {
+  background: var(--brand);
+  color: #fff;
+  padding: 80px 0;
+}
+.eligInner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.eligText h2 {
+  color: #fff;
+  font-size: clamp(28px, 4vw, 42px);
+  margin: 12px 0 16px;
+}
+.eligText p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 16px;
+  margin-bottom: 28px;
+}
+.eligReqs {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.eligReqs li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 15px;
+}
+.eligCheck {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--accent2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.eligCta {
+  background: var(--accent2) !important;
+  color: var(--brand) !important;
+  font-weight: 700 !important;
+}
+.eligVisual {
+  display: flex;
+  justify-content: center;
+}
+.eligCard {
+  background: #fff;
+  border-radius: 24px;
+  padding: 36px;
+  width: 100%;
+  max-width: 360px;
+}
+.eligCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: 500;
+}
+.eligScoreBadge {
+  background: #D1FAE5;
+  color: var(--success);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+.eligScore {
+  font-family: 'Instrument Serif', serif;
+  font-size: 64px;
+  color: var(--brand);
+  line-height: 1;
+  margin-bottom: 16px;
+}
+.eligBar {
+  height: 8px;
+  background: var(--border);
+  border-radius: 10px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+.eligBarFill {
+  height: 100%;
+  width: 78%;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  border-radius: 10px;
+}
+.eligCardRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+}
+.eligCardRow:last-child {
+  border-bottom: none;
+}
+.eligCardRow strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .heroInner,
+  .eligInner {
+    grid-template-columns: 1fr;
+  }
+  .heroCard {
+    display: none;
+  }
+  .stepsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .loansGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .termsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .stepsGrid,
+  .loansGrid,
+  .termsGrid {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    padding: 60px 0 50px;
+  }
+}
